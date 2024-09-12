@@ -12,20 +12,20 @@ private:
 
 public:
 	Monster() = default;
-	Monster(std::string name) : name_(name) {}
+	Monster(std::string name) : name_(name) {} // not relevant for the formative project
 	Monster(std::string name, int speed, int hp, int def, int atk);
 
-	~Monster();
+	~Monster(); // not relevant for the formative project
 
 	int Hp() { return hp_; }
 	std::string get_name() { return name_; }
 
 
-	void TellTheName();
-	void TellTheName(std::string race);
+	void TellTheName();// not relevant for the formative project
+	void TellTheName(std::string race);// not relevant for the formative project
 
 	void GetDamage(int damage);
-	void Heal(int heal_value);
+	void Heal(int heal_value);// not relevant for the formative project
 
 	bool IsAlive();
 
