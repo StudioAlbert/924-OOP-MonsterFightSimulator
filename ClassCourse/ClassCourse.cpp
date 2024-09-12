@@ -18,18 +18,19 @@ int main()
 
 	do
 	{
+		orc.Heal(2);
 		orc.GetDamage(5);
-		std::cout << orc.get_name() << " hp = " << orc.get_hp() << std::endl;
+		std::cout << orc.get_name() << " hp = " << orc.Hp() << std::endl;
+		
 
-		if (orc.get_hp() <= 0)
+		if (orc.Hp() <= 0)
 		{
 			std::cout << orc.get_name() << " is dead......" << std::endl;
 			// TO DO : Trumpet noise of death
 		}
 
-		orc.Heal(2);
 
-	} while (orc.get_hp() > 0);
+	} while (orc.Hp() > 0);
 
 
 	Monster generic_monster;

@@ -1,3 +1,6 @@
+#ifndef MONSTER_H
+#define MONSTER_H
+
 class Monster
 {
 private:
@@ -9,12 +12,12 @@ private:
 
 public:
 	Monster() = default;
-	Monster(std::string name) : name_(name) {};
+	Monster(std::string name) : name_(name) {}
 	Monster(std::string name, int speed, int hp, int def, int atk);
 
 	~Monster();
 
-	int get_hp() { return hp_; }
+	int Hp() { return hp_; }
 	std::string get_name() { return name_; }
 
 
@@ -27,3 +30,4 @@ public:
 	bool IsAlive();
 
 };
+#endif // MONSTER_H

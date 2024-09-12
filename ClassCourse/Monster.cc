@@ -36,8 +36,7 @@ void Monster::TellTheName(std::string race)
 
 void Monster::GetDamage(int damage)
 {
-
-	this->hp_ -= damage;
+	hp_ -= damage;
 
 	if (hp_ <= 0)
 	{
